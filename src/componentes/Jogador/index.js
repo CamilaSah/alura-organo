@@ -1,14 +1,14 @@
 import './Jogador.css'
 
-const Jogador = () => {
+const Jogador = ({nome, pontos, imagem}) => {
     return (
         <div className='jogador'>
             <div className='cabecalho'>
-                <img src='https://github.com/adrianolobo.png' alt='Adriano Lobo'/>
+                <img src={imagem} alt={nome}/>
             </div>
             <div className='rodape'>
-                <h4>Adriano Lobo</h4>
-                <h5>1050 pontos</h5>
+                <h4>{nome}</h4>
+                <h5>{pontos}</h5>
             </div>
         </div>
     )

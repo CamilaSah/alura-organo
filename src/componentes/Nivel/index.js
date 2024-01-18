@@ -7,8 +7,9 @@ const Nivel = (props) => {
     return (
         <section className='nivel' style={css}>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
-            <Jogador />
-            <Jogador />
+            <div className='jogadores'>
+                {props.jogadores.map(jogador => <Jogador nome={jogador.nome} pontos={jogador.pontos} imagem={jogador.imagem}/>)}
+            </div>
         </section>
     )
 }

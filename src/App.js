@@ -45,7 +45,13 @@ function App() {
       <Banner />
       <Formulario niveis={niveis.map(nivel => nivel.nome)} aoJogadorCadastrado={jogador => aoNovoJogadorAdicionado(jogador)}/>
 
-      {niveis.map(nivel => <Nivel key={nivel.nome} nome={nivel.nome} corPrimaria={nivel.corPrimaria} corSecundaria={nivel.corSecundaria}/>)}
+      {niveis.map(nivel => <Nivel 
+        key={nivel.nome} 
+        nome={nivel.nome} 
+        corPrimaria={nivel.corPrimaria} 
+        corSecundaria={nivel.corSecundaria}
+        jogadores={jogadores}
+      />)}
 
     </div>
   );
