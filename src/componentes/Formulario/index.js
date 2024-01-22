@@ -19,6 +19,10 @@ const Formulario = (props) => {
             imagem: imagem,
             nivel: nivel
         })
+        setNome('')
+        setPontos('')
+        setImagem('')
+        setNivel('')
     }
 
     return (

@@ -50,7 +50,7 @@ function App() {
         nome={nivel.nome} 
         corPrimaria={nivel.corPrimaria} 
         corSecundaria={nivel.corSecundaria}
-        jogadores={jogadores}
+        jogadores={jogadores.filter(jogador => jogador.nivel === nivel.nome)}
       />)}
 
     </div>

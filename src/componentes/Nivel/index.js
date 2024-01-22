@@ -5,12 +5,13 @@ const Nivel = (props) => {
     const css = {backgroundColor: props.corSecundaria}
 
     return (
-        <section className='nivel' style={css}>
+        (props.jogadores.length > 0) ? <section className='nivel' style={css}>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
             <div className='jogadores'>
                 {props.jogadores.map(jogador => <Jogador nome={jogador.nome} pontos={jogador.pontos} imagem={jogador.imagem}/>)}
             </div>
         </section>
+        : ''
     )
 }
 
