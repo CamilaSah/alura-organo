@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Banner from './componentes/Banner/Banner';
 import Formulario from './componentes/Formulario';
 import Nivel from './componentes/Nivel';
+import Footer from './componentes/Footer';
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
         jogadores={jogadores.filter(jogador => jogador.nivel === nivel.nome)}
       />)}
 
+      <Footer />
     </div>
   );
 }

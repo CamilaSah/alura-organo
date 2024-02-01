@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 60px 200px;
+    align-items: center;
+    background-color: #6278F7;
+    color: #fff;
+}
+
+.footer > div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer_redes-sociais {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.footer_redes-sociais img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+}
+
+.footer_logo img {
+    height: 60px;
+}
+
+.footer .footer_autor {
+    color: #fff;
+    font-size: 14px;
+    justify-content: flex-end;
+}
