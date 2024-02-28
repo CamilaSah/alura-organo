@@ -1,9 +1,9 @@
 import './Jogador.css'
 
-const Jogador = ({nome, pontos, imagem}) => {
+const Jogador = ({nome, pontos, imagem, corDeFundo}) => {
     return (
         <div className='jogador'>
-            <div className='cabecalho'>
+            <div className='cabecalho' style={{ backgroundColor: corDeFundo }}>
                 <img src={imagem} alt={nome}/>
             </div>
             <div className='rodape'>
