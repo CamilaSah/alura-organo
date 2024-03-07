@@ -38,8 +38,8 @@ const Formulario = (props) => {
                 />
                 <CampoTexto 
                     obrigatorio={true} 
-                    label="Pontos do Ranking" 
-                    placeholder="Digite seus pontos do ranking"
+                    label="Pontos" 
+                    placeholder="Digite seus pontos"
                     valor={pontos}
                     aoAlterado={valor => setPontos(valor)}
                 />
